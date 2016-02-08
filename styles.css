@@ -3,20 +3,26 @@
   margin: 0 auto 20px;
 }
 
-.available {
-  background-color: green;
-  width: 24%;
-  margin: auto;
+/* Seating chart */
+.available, .reserved {
+  width: 22%;
+  margin: 5px;
   min-height: 100px;
   display: inline-block;
+  border-radius: 20px;
+}
+
+.available {
+  background-color: green;
 }
 
 .reserved {
   background-color: red;
-  width: 24%;
-  margin: auto;
-  min-height: 100px;
-  display: inline-block;
+}
+
+.available:hover, .reserved:hover {
+  opacity: 0.6;
+  cursor: pointer;
 }
 
 /*Form*/
