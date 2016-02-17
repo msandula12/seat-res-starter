@@ -6,12 +6,31 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="container">
-  <h1>Ye Olde Front-End Theatre</h1>
-  <p>Cupcake ipsum dolor sit amet. Donut topping croissant sesame snaps wafer marzipan cake sweet roll. Fruitcake caramels pudding jelly beans jelly apple pie. Bear claw candy brownie caramels halvah brownie powder. Fruitcake fruitcake sesame snaps candy canes bonbon donut chupa chups pastry. Gummi bears brownie topping tart gingerbread danish.</p>
-  <p class="text-center"><span class="green">Available</span> <span class="red">Unavailable</span></p>
+<body>
+  <div class="container-fluid" id="header">
+    <h1>Ye Olde Front-End Theatre</h1>
+  </div>
+  <div class="container">
 
-  <section class="seat-chart">
+    <div id="seatform">
+    <p>Choose a seat from the diagram below. Then enter your information to reserve your seat!</p>
+    <form>
+      <div class="form-group">
+        <label for="username">Name</label>
+        <input type="name" class="form-control" id="username" placeholder="Name">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+      </div>
+
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+   </div> 
+
+       <p class="text-center"><span class="green">Available</span> <span class="red">Unavailable</span></p>
+    <div class="container-fluid" id="seat-chart">
     <!-- This section will contain seats with one of two classes. Eventually, the divs will be generated with JavaScript! Keep this in mind when making decisions about the layout. -->
     <div class="available" id="seat1"><span id="first"></span></div>
     <div class="available" id="seat2"></div>
@@ -38,20 +57,7 @@
     <div class="available" id="seat23"></div>
     <div class="available" id="seat24"></div>
   </section>
-  <!-- <form action="" method="post">
-    <div>
-      This section contains the necessary code to include a form that prompts the user for their name and email address
-      <label for="username" class="title">Username:</label>
-      <input type=:"text" id="username" name="name"/>
-    </div>
-    <div>
-      <label for="email" class="title">Email:</label>
-      <input type=:"text" id="email" name="name"/>
-    </div>
-    <div class="submit">
-      <button class="formButt">Submit</button>
-    </div>
-    </a> -->
+  
     <form>
       <div class="form-group">
         <label for="exampleInputEmail1">Name</label>
@@ -63,11 +69,10 @@
       </div>
              <button class="submitButt" type="button">Submit</button>
       </form>
-        
-    
+     <input type="submit" value="Submit" id="submit" /> -->
 
-
-
+    </div>
+</div>
 
   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script type="text/javascript" src="app.js"></script>
