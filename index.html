@@ -14,7 +14,7 @@
 
     <div id="seatform">
     <p>Choose a seat from the diagram below. Then enter your information to reserve your seat!</p>
-    <form>
+    <form id="userInput">
       <div class="form-group">
         <label for="username">Name</label>
         <input type="name" class="form-control" id="custName" placeholder="Name">
@@ -25,14 +25,14 @@
         <input type="email" class="form-control" id="exampleInputPassword1" placeholder="E-mail">
       </div>
 
-      <button class="submitButt" type="button">Submit</button>
+      <button id="submitButt" type="submit">Submit</button>
     </form>
    </div> 
 
-       <p class="text-center"><span class="green">Available</span> <span class="red">Unavailable</span></p>
+    <p class="text-center"><span class="green">Available</span> <span class="red">Unavailable</span></p>
     <div class="container-fluid" id="seat-chart">
     <!-- This section will contain seats with one of two classes. Eventually, the divs will be generated with JavaScript! Keep this in mind when making decisions about the layout. -->
-    <div class="available" id="seat1"><span id="first"></span></div>
+    <!-- <div class="available" id="seat1"><span id="first"></span></div>
     <div class="available" id="seat2"></div>
     <div class="available" id="seat3"></div>
     <div class="available" id="seat4"></div>
@@ -55,7 +55,7 @@
     <div class="available" id="seat21"></div>
     <div class="available" id="seat22"></div>
     <div class="available" id="seat23"></div>
-    <div class="available" id="seat24"></div>
+    <div class="available" id="seat24"></div> -->
   </section>
 
     </div>
