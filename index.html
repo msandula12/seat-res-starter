@@ -13,34 +13,34 @@
 
   <section class="seat-chart">
     <!-- This section will contain seats with one of two classes. Eventually, the divs will be generated with JavaScript! Keep this in mind when making decisions about the layout. -->
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
+    <div class="available" id="seat1"><span id="first"></span></div>
+    <div class="available" id="seat2"></div>
+    <div class="available" id="seat3"></div>
+    <div class="available" id="seat4"></div>
+    <div class="available" id="seat5"></div>
+    <div class="available" id="seat6"></div>
+    <div class="available" id="seat7"></div>
+    <div class="available" id="seat8"></div>
+    <div class="available" id="seat9"></div>
+    <div class="available" id="seat10"></div>
+    <div class="available" id="seat11"></div>
+    <div class="available" id="seat12"></div>
+    <div class="available" id="seat13"></div>
+    <div class="available" id="seat14"></div>
+    <div class="available" id="seat15"></div>
+    <div class="available" id="seat16"></div>
+    <div class="available" id="seat17"></div>
+    <div class="available" id="seat18"></div>
+    <div class="available" id="seat19"></div>
+    <div class="available" id="seat20"></div>
+    <div class="available" id="seat21"></div>
+    <div class="available" id="seat22"></div>
+    <div class="available" id="seat23"></div>
+    <div class="available" id="seat24"></div>
   </section>
-  <form action="" method="post">
+  <!-- <form action="" method="post">
     <div>
-      <!---This section contains the necessary code to include a form that prompts the user for their name and email address.-->
+      This section contains the necessary code to include a form that prompts the user for their name and email address
       <label for="username" class="title">Username:</label>
       <input type=:"text" id="username" name="name"/>
     </div>
@@ -49,9 +49,26 @@
       <input type=:"text" id="email" name="name"/>
     </div>
     <div class="submit">
-      <input type="submit" value="Submit" id="submit" />
+      <button class="formButt">Submit</button>
     </div>
-    </a>
+    </a> -->
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Name</label>
+        <input type="name" class="form-control" id="custName" placeholder="Name">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">E-Mail</label>
+        <input type="email" class="form-control" id="exampleInputPassword1" placeholder="E-mail">
+      </div>
+             <button class="submitButt" type="button">Submit</button>
+      </form>
+        
+    
+
+
+
+
   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script type="text/javascript" src="app.js"></script>
 </body>
