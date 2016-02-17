@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 	});
 
-$(Form).submit(function() {
+$('form').submit(function() {
     // get all the inputs into an array.
     var $values = $(this).serialize();
 
@@ -15,6 +15,22 @@ $(Form).submit(function() {
     // $inputs.each(function() {
     //     values[this.name] = $(this).val();
     // });
+$(values).submit(function( event ) {
+  console.log( $( this ).serializeArray() );
+  event.preventDefault();
+});
+
+  // function showValues() {
+  //   var values = $( "submitButt" ).serializeArray();
+  //   $( /*the array values*/ ).empty();
+  //   jQuery.each( fields, function( i, field ) {
+  //     $( "#results" ).append( field.value + " " );
+  //   });
+  // }
+ 
+  // $( ":checkbox, :radio" ).click( showValues );
+  // $( "select" ).change( showValues );
+  // showValues();
 
 
 
