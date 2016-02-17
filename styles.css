@@ -1,5 +1,6 @@
 body {
   background-color: #C4C4C4;
+  margin: 0;
 }
 
 @font-face {
@@ -20,16 +21,22 @@ h1{
   font-size: 6em;
 }
 
-.seat-chart {
+
+.container {
+  margin: 0px auto;
+}
+
+#seat-chart {
   width: 90%;
-  margin: 0 auto 20px;
+  margin: 0px auto;
 }
 
 /* Seating chart */
 .available, .reserved {
-  width: 22%;
-  margin: 5px;
-  min-height: 100px;
+  width: 22%;  
+  margin: 0.3em;
+  height: 10em;
+  padding: 0;
   display: inline-block;
   border-radius: 20px;
 }
@@ -48,12 +55,10 @@ h1{
 }
 
 /*Form*/
-.title, .submit  {
-  border-bottom: 1px solid #efefef;
-  margin: 10px;
-  padding-bottom: 10px;
-  width: 260px;
-  text-align: right}
+#seatform {
+  width: 40%;
+  margin: 20px auto;
+}
 
 .red {
   color: #9E0303;
