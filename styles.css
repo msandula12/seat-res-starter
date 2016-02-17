@@ -1,3 +1,25 @@
+body {
+  background-color: #C4C4C4;
+}
+
+@font-face {
+  font-family: CarnevaleeFreakshow;
+  src: url(carnivalee-freakshow/CarnevaleeFreakshow.ttf);
+}
+
+#header {
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1{
+  font-family: CarnevaleeFreakshow;
+  color: #0E5C23;
+  font-size: 6em;
+}
+
 .seat-chart {
   width: 90%;
   margin: 0 auto 20px;
@@ -13,11 +35,11 @@
 }
 
 .available {
-  background-color: green;
+  background-color: #0E5C23;
 }
 
 .reserved {
-  background-color: red;
+  background-color: #9E0303;
 }
 
 .available:hover, .reserved:hover {
@@ -34,13 +56,13 @@
   text-align: right}
 
 .red {
-  color: red;
+  color: #9E0303;
   font-size: 24px;
   padding:10px;
 }
 
 .green {
-  color: green;
+  color: #0E5C23;
   font-size: 24px;
   padding: 10px;
 }
