@@ -13,7 +13,7 @@ $(document).ready(function(){
 		$("div.available").click(function(){
 		$(this).toggleClass("reserved");
 
-		});
+});
 
 
 		$('.available').on('click', function() {
