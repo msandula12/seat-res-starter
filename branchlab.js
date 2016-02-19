@@ -1,6 +1,10 @@
 
 
+
 console.log("My name is Kwaku here's a new file");
+
+console.log("My name is Aleah here's a new file");
+
 
 
 console.log("My name is LGOD_Tom here's a new file");
