@@ -1,4 +1,8 @@
+
 console.log("My name is Kwaku here's a new file");
+
+console.log("My name is Mike here's a new file");
+
 
 
 prompt('Are you Kwaku?);
