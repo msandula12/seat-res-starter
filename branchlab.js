@@ -1,4 +1,4 @@
-console.log("My name is Tom here's a new file");
+console.log("My name is Mike here's a new file");
 
 
 prompt('Are you Kwaku?);
