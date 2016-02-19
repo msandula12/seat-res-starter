@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+console.log("Hello world, its Kwaku!");
+=======
 $(document).ready(function(){
 	
 	// looping function creates seating chart divs
@@ -51,3 +54,4 @@ $(document).ready(function(){
 // 		$(".reserved").append(customer);
 // 	}
 // });
+>>>>>>> bc861a3e5a26f85d86f593ef688b25aae472ffc2
