@@ -6,52 +6,46 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="container">
-  <h1>Ye Olde Front-End Theatre</h1>
-  <p>Cupcake ipsum dolor sit amet. Donut topping croissant sesame snaps wafer marzipan cake sweet roll. Fruitcake caramels pudding jelly beans jelly apple pie. Bear claw candy brownie caramels halvah brownie powder. Fruitcake fruitcake sesame snaps candy canes bonbon donut chupa chups pastry. Gummi bears brownie topping tart gingerbread danish.</p>
-  <p class="text-center"><span class="green">Available</span> <span class="red">Unavailable</span></p>
+<body>
+  
+  <div class="container-fluid" id="header">
+    <h1>Ye Olde Front-End Theatre</h1>
+  </div>
+  
+  <div class="container">
 
-  <section class="seat-chart">
-    <!-- This section will contain seats with one of two classes. Eventually, the divs will be generated with JavaScript! Keep this in mind when making decisions about the layout. -->
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-  </section>
-  <form action="" method="post">
-    <div>
-      <!---This section contains the necessary code to include a form that prompts the user for their name and email address.-->
-      <label for="username" class="title">Username:</label>
-      <input type=:"text" id="username" name="name"/>
-    </div>
-    <div>
-      <label for="email" class="title">Email:</label>
-      <input type=:"text" id="email" name="name"/>
-    </div>
-    <div class="submit">
-      <input type="submit" value="Submit" id="submit" />
-    </div>
-    </a>
+    <div id="seatform">
+    
+    <p>Choose a seat from the diagram below. Then enter your information to reserve your seat!</p>
+
+  <form id="userInput">
+
+      <div class="form-group">
+        <label for="firstName">First name:</label>
+        <input type="text" class="form-control" name="First" value="">
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Last name:</label>
+        <input type="text" class="form-control" name="Last" value="">
+      </div>
+
+      <div class="form-group">
+        <label for="phoneNumber">Phone number:</label>
+        <input type="text" class="form-control" name="Phone" value="">
+      </div>
+
+        <input type="submit" name="" value="Submit" id="submitButton">
+        
+    </form>
+   
+    </div> 
+
+    <p class="text-center"><span class="green">Available</span> <span class="red">Unavailable</span></p>
+
+    <!-- DIV CHART IS GENERATED IN THE JAVASCRIPT NOW -->
+    <div class="container-fluid" id="seat-chart"></div>
+
   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script type="text/javascript" src="app.js"></script>
 </body>
