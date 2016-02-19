@@ -1,8 +1,9 @@
 $(document).ready(function(){
-	var button = $('#submitButt')
+	
+	// looping function creates seating chart divs
+	// (successful)
 	var seatNumber = [];
-	//NEW FUNK TION HERE
-	for(var i=1; i<=24; i++){
+	for(var i = 1; i <= 24; i++){
 		seatNumber.push(i);
 		$("#seat-chart").append(function(){
 			return "<div class='available'><h3>" + i + "</h3></div>";
@@ -14,17 +15,26 @@ $(document).ready(function(){
 		$('.available').on('click', function() {
 		$('#seat').replaceWith('test');
 	});
+
+	// serialize form input
+	// (successful)
+	$( "form" ).submit(function( event ) {
+		var customer = $( this ).serializeArray();
+		console.log(customer);
+		event.preventDefault();
+	});
+
+	// $("#submitButton").click(function () {
+	// 	$( "form" ).submit(function( event ) {
+	// 		var customer = $( this ).serializeArray();
+	// 		console.log(customer);
+	// 		event.preventDefault();
+	// 		if ($("div").hasClass("reserved")) {
+	// 			$(".reserved").data("First", "");
+	// 		}
+	// 	});
+	// });
 });
-
-
-// attempt to create object with customer input 
-// (unsuccessful so far)
-
-$( "form" ).submit(function( event ) {
-  console.log( $( this ).serializeArray() );
-  event.preventDefault();
-});
-
 
 
 

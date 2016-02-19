@@ -16,8 +16,8 @@ body {
 }
 
 h1{
-/*  font-family: CarnevaleeFreakshow;
-*/  color: #0E5C23;
+  font-family: CarnevaleeFreakshow;
+  color: #0E5C23;
   font-size: 6em;
 }
 
@@ -76,6 +76,13 @@ h3 {
   padding: 10px;
 }
 
-
-
-
+#submitButton {
+  background-color: #6b6b6b;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+}
+  
+#submitButton:hover {
+  background-color: black;
+}
