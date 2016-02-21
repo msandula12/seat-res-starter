@@ -72,6 +72,10 @@ h3 {
   padding: 10px;
 }
 
+#lastNameDiv, #phoneNumberDiv, #submitButton {
+  display: none;
+}
+
 #submitButton {
   background-color: #6b6b6b;
   color: white;

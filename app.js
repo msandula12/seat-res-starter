@@ -37,6 +37,22 @@ $(document).ready(function(){
 	// 		}
 	// 	});
 	// });
+
+	
+	// show one form field at a time
+	// (successful — but wondering if it could be DRY with a "for" loop?)
+	$("#firstName").focus(function() {
+		$("#lastNameDiv").fadeIn(400);
+	});
+
+	$("#lastName").focus(function() {
+		$("#phoneNumberDiv").fadeIn(400);
+	});
+
+	$("#phoneNumber").focus(function() {
+		$("#submitButton").fadeIn(400);
+	});
+	
 });
 
 
