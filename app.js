@@ -17,9 +17,9 @@ $(document).ready(function(){
 	});
 
 	// serialize form input
-	// (successful)
-	$( "form" ).submit(function( event ) {
-		var customer = $( this ).serializeArray();
+	// (successful-ish)
+	$("form").submit(function(event) {
+		var customer = $(this).serializeArray();
 		console.log(customer);
 		event.preventDefault();
 	});
@@ -36,17 +36,21 @@ $(document).ready(function(){
 	// });
 
 	
-	// show one form field at a time
+	// show one form field at a time, with background-color change on focus
 	// (successful — but wondering if it could be DRY with a "for" loop?)
 	$("#firstName").focus(function() {
+		$("#lastName").css("background-color", "#ddd");
 		$("#lastNameDiv").fadeIn(400);
 	});
 
 	$("#lastName").focus(function() {
+		$("#lastName").css("background-color", "#fff");
 		$("#phoneNumberDiv").fadeIn(400);
+		$("#phoneNumber").css("background-color", "#ddd");
 	});
 
 	$("#phoneNumber").focus(function() {
+		$("#phoneNumber").css("background-color", "#fff");
 		$("#submitButton").fadeIn(400);
 	});
 	
