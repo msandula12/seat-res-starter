@@ -1,6 +1,3 @@
-
-console.log("Hello world, its Kwaku!");
-
 $(document).ready(function(){
 	
 	// looping function creates seating chart divs
